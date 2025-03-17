@@ -20,7 +20,7 @@ public class PrestamoController {
 
     @GetMapping
     public ResponseEntity<List<Prestamo>> getAllPrestamos() {
-        List<Prestamo> prestamos = prestamoService.getAllPrestamos();
+        List<Prestamo> prestamos = prestamoService.getPrestamos();
         return ResponseEntity.ok(prestamos);
     }
 }

@@ -1,12 +1,12 @@
 package com.ec3.ec3_GiancarloClementeCcanto.Controller;
 
+import com.ec3.ec3_GiancarloClementeCcanto.Model.Libro;
 import com.ec3.ec3_GiancarloClementeCcanto.Service.LibroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/libros")
@@ -34,4 +34,4 @@ public class LibroController {
                 .orElse(ResponseEntity.notFound().build());
     }
 }
-}
+
